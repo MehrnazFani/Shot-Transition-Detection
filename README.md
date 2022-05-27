@@ -1,5 +1,6 @@
 # Histogram-based Video Shot Transition Detection
-This code detects abrupt (cut) shot transitions in a given input video by hierarchical temporal partitioning of video frames, using block-color histogram of the consequitive frames, and thresholding. This code is written based on the cut transition detection method that is introduced in this [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7585511).
+This code detects abrupt (cut) shot transitions in a given input video by, hierarchical temporal partitioning of video frames, using block-color histogram of the consequitive frames, and thresholding. This code is written based on the cut transition detection method that is introduced in this [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7585511).
+![hierarchical partitioning of video frame](https://github.com/MehrnazFani/Shot-Transition-Detection/blob/61a696880f5e69bca3e86c296006f88153c3a45e/img-for-readme/TemporalPartitioning.png)
 
 
 ## Environment

@@ -8,8 +8,6 @@ This code detects abrupt (cut) shot transitions in a given input video by, hiera
    <img width="600" src="https://github.com/MehrnazFani/Shot-Transition-Detection/blob/61a696880f5e69bca3e86c296006f88153c3a45e/img-for-readme/TemporalPartitioning.png" alt=" Hierarchical partitioning of video frames">
 </p>
 
-##![hierarchical partitioning of video frames](https://github.com/MehrnazFani/Shot-Transition-Detection/blob/61a696880f5e69bca3e86c296006f88153c3a45e/img-for-readme/TemporalPartitioning.png)
-
 ## Environment
 + Ubuntu 18.04
 + CUDA 10.0

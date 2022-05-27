@@ -14,7 +14,7 @@ def vid_2_frames_half(video_dir, frames_dir):
     if frame_number % 2 !=0 :
         frame_number = frame_number - 1
 
-    #fps_in = vidcap.get(cv2.CAP_PROP_FPS)
+    fps = vidcap.get(cv2.CAP_PROP_FPS)
     j = 0
     for i in tqdm(range(int(frame_number))):
         _, image = vidcap.read()
@@ -25,7 +25,7 @@ def vid_2_frames_half(video_dir, frames_dir):
             j += 1
             vid_frm_nums = j
         #fps_out = int(fps_in//2)
-    return vid_frm_nums   
+    return vid_frm_nums, fps   
 #-----------------------------------------------------------------------------
 def video_shot_generate(frames_dir, shots_dir, shot_name, f_start_shot, f_end_shot, fps):
     img_array = []

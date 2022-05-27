@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 import math
 from tqdm import tqdm
-'''START==============utils required for parse_video2shots.py=================='''
+'''START==============utils required for shot_transition_detection.py=================='''
 # convert video to frames (half frame rate and half frame size in each direction)
 def vid_2_frames(video_dir, frames_dir):
     video_name = video_dir.split('/')[-1]

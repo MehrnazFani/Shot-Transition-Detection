@@ -14,7 +14,7 @@ conda create --name <env> --file requirements.txt
 ```
 ## Using the code
 
-+ **Step 1:** Put the input video files (<video_name>.mp4) in "videos" file.
++ **Step 1:** Put the input video files (<video_name>.mp4) in "videos" folder.
 + **Step 2:** Run [shot_transition_detection.py](https://github.com/MehrnazFani/Shot-Transition-Detection/blob/7687a09197d2b0a51074024fe5e9d540273d93b0/shot_transition_detection.py)
 
 + **Outputs:** A folder will be created, i.e. "./videos/<video_name>" , that will include:

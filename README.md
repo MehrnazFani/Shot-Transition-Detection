@@ -21,7 +21,7 @@ conda create --name <env> --file requirements.txt
 > -  A “.csv” file with information about all of the generated video shots.
 >
 # Cite us please
-Please cite the following paper if you are using this code
+Please cite the following papers if you are using this code
 ```
 @inproceedings{yazdi2016shot,
   title={Shot boundary detection with effective prediction of transitions' positions and spans by use of classifiers and adaptive thresholds},
@@ -30,5 +30,13 @@ Please cite the following paper if you are using this code
   pages={167--172},
   year={2016},
   organization={IEEE}
+}
+
+
+@article{fani2021localization,
+  title={Localization of Ice-Rink for Broadcast Hockey Videos},
+  author={Fani, Mehrnaz and Walters, Pascale Berunelle and Clausi, David A and Zelek, John and Wong, Alexander},
+  journal={arXiv preprint arXiv:2104.10847},
+  year={2021}
 }
 ``` 

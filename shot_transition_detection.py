@@ -8,10 +8,8 @@ from SBD_for_Mgr import SBD_for_Mgr
 Created on Tue Nov 17 18:24:50 2020
 @author: mehrnaz
 """
-''' This code performs video-shot Transition detection on input video and Parses the input video into (multiple) video-shots
-. Input video (x fps, e.g. 60 fps)
+''' This code performs video-shot Transition detection on input video and Parses the input video into (multiple) video-shots with ".mp4" type
 . Outputs:
-    . video-shots(x/2 fps, e.g. 30 fps)
     . A .csv file that includes video-shots information, i.e., shot_ind, start frame, end frame, start time (sec), end time (sec)
 
 Hierachical temporal segmenting of the video:
@@ -41,9 +39,10 @@ for file in os.listdir(videos_dir):
             os.makedirs(frames_dir)   
             # convert videos into frames with fps/2 frms/sec  and (h/2,w/2) frame resolution     
             print('\\Convert video into frames, with half frame rate and half frame size')
-            vid_frm_nums = utils.vid_2_frames_half(videos_dir + video_name, frames_dir)  
+            vid_frm_nums ,fps = utils.vid_2_frames_half(videos_dir + video_name, frames_dir)  
         else:
             vid_frm_nums = len(os.listdir(frames_dir))
+            fps = input(" what is the frame rate of your input video(fps)?")
         print('\\Start Processingthe video:')
         vid_frm_nums = vid_frm_nums - 1 # omit the last frmae just to make sure the all frames are readable 
         indmax = vid_frm_nums -1

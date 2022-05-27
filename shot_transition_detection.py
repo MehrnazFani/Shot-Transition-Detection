@@ -24,7 +24,6 @@ Hierachical temporal segmenting of the video:
 Procedure:
     . Thresholding      
 '''   
-#--- how can I make this code better?
 videos_dir = './videos2/'
 epsilon = 10**(-13) 
 # rename videos if .MP4 to .mp4

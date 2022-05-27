@@ -7,8 +7,7 @@ This code detects abrupt (cut) shot transitions in a given input video by hierar
 + CUDA 10.0
 + CuDNN 10.0
 + Python 3.8
-+ Anaconda 3
-Use "requirement.txt" to create a conda environment with all required packages
++ Anaconda 3: Use "requirement.txt" to create a conda environment with all required packages
 ```
 conda create --name <env> --file requirements.txt
 ```

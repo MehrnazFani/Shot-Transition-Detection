@@ -23,7 +23,7 @@ def SBD_for_Mgr(Mgr, Mgr_sz, Mgr_pre_endfrm_num, vid_frm_nums, frames_dir):
     sg_num = 10  # # of segments in a group
     gr_num = int(Mgr_sz/200)  # # of groups in a mega-group = 9 in our case
     blk_num = 4#16  # # of blocks of a frame
-    bin_num = 4  #8 # of histogram bins for each color channel 
+    bin_num = 3#4  #8 # of histogram bins for each color channel 
     ind_mfrms = np.arange(Mgr_strt_frm, Mgr_end_frm + 1, frm_num-1, dtype=int) #  index of marginal frames of segs in a sequence
     #print('Marginal frames of the mega-group:', ind_mfrms)
     indmax = vid_frm_nums -1

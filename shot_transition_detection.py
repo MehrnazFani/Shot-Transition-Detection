@@ -48,7 +48,7 @@ for file in os.listdir(videos_dir):
         indmax = vid_frm_nums -1
         frames_dir = videos_dir + 'frames_' + file.split('.mp4')[0] + '/'       
         window = 60 # 60 secs = 1 minute
-        fps = 30 # frame per second 
+        #fps = 30 # frame per second 
         Mgr_sz = window * fps + 1  # mega group size = 1801 frms = frame0 -- frame1800
         Mgr_nums = int(vid_frm_nums // (Mgr_sz - 1))
         Mgr_extnd = vid_frm_nums % (Mgr_sz - 1)        
